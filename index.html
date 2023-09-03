@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Document</title>
+</head>
+<body style=" background-color: #c6d9ec;">
+   
+   <section style="
+                   position:absolute;
+                   
+                   background-color: #c6d9ec;
+                   ">
+
+
+
+    <h1 id="myH1" style="  
+    width: 400px;
+                    height: 80px;
+                    position: relative;
+                   
+
+                    font-size: 60px;
+                    font-family: 'Courier New', monospace;
+                    color: #666699;
+              
+              
+                    top: 200px;
+                    left: 10px;
+                    letter-spacing: 40px;
+                    
+                    
+
+                    ">Art?</h1>
+
+    
+
+
+    <p1 id="myP1" style=" 
+                top: 200px;
+                left: 10px;
+              
+                height: 600px;
+             
+                position: relative;
+                font-size: 19px;
+                font-family: 'Courier New', monospace;
+                color: rgb(0, 0, 0);
+                line-height: 1.8;
+                letter-spacing: 10px;
+                width: 600px;
+                height: 900px;
+                
+    ">Art is a form of human expression that can be seen,
+     heard, felt, or experienced in various ways.
+      Art can be created by individuals or groups,
+       for personal or public purposes, with different intentions and meanings.
+        Art can communicate emotions, ideas, values, beliefs, or messages to the audience. Art can also challenge, inspire, educate, or entertain the audience. Art can be classified into different categories, such as visual arts, performing arts, literary arts, or digital arts. However, art is not limited by these categories and can also be interdisciplinary, experimental, or innovative. Art is subjective and depends on the perspective of the creator and the viewer. Therefore, there is no definitive answer to the question of what is art. Art is what we make of it.
+</p1> 
+    
+    
+
+
+    <audio id="myAudio" loop>
+        <source src="https://assets.codepen.io/10749896/Fracture.mp3" type="audio/mp3" />
+      </audio>
+      
+      <button id="playButton" onclick="playAudio()">Touch me!</button>
+    
+      
+      
+      
+      <script>
+         var myAudio = document.getElementById("myAudio");
+         var myH1 = document.getElementById("myH1");
+         var myP1 = document.getElementById("myP1");
+         var playButton = document.getElementById("playButton");
+         var playing = false;
+
+         function playAudio() {
+            myAudio.play();
+            playing = true;
+            playButton.innerHTML = "Hi there!";
+            playButton.classList.add("active");
+            myH1.style.opacity = "1";
+            myP1.style.opacity = "1";
+         }
+
+         myH1.style.opacity = "0";
+         myP1.style.opacity = "0";
+</script>
+      
+      <style>
+          button {
+            position: absolute;
+            top: 115px;
+                    left: 10px;
+              background-color: #9eaebe;
+              font-size: 20px;
+                font-family: 'Courier New', monospace;
+              border-style: dotted;
+              border-width: thick;
+              color: white;
+              padding: 8px 15px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+          }
+         
+          button:hover {
+      background-color:#666699;
+      transition: background-color 0.2s;
+    }
+
+    button.active {
+      background-color: #ff0066;
+    }
+</style>
+    
+</style>
+   </section>
+    
+</body>
+</html>
