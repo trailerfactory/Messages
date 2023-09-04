@@ -7,7 +7,7 @@ var myAudio = document.getElementById("myAudio");
          function playAudio() {
             myAudio.play();
             playing = true;
-            playButton.innerHTML = "Hi there!";
+            playButton.innerHTML = "What is";
             playButton.classList.add("active");
             myH1.style.opacity = "1";
             myP1.style.opacity = "1";
